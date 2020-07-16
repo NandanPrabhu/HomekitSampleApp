@@ -14,7 +14,9 @@
 		DF06003123C5CC3F005F4371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF06003023C5CC3F005F4371 /* Assets.xcassets */; };
 		DF06003423C5CC3F005F4371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF06003223C5CC3F005F4371 /* LaunchScreen.storyboard */; };
 		DF06003D23C5E2AD005F4371 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF06003C23C5E2AD005F4371 /* HomeKit.framework */; };
-		DF76C563243449E600EAF24E /* AccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF76C562243449E600EAF24E /* AccessoryViewController.swift */; };
+		DF06BCF124BF57D700192816 /* ServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06BCF024BF57D700192816 /* ServiceVC.swift */; };
+		DF06BCF324BF5B0D00192816 /* CharacteristicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06BCF224BF5B0D00192816 /* CharacteristicVC.swift */; };
+		DF76C563243449E600EAF24E /* AccessoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF76C562243449E600EAF24E /* AccessoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,9 @@
 		DF06003523C5CC3F005F4371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF06003C23C5E2AD005F4371 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		DF06003E23C5F2C5005F4371 /* HomekitSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomekitSampleApp.entitlements; sourceTree = "<group>"; };
-		DF76C562243449E600EAF24E /* AccessoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViewController.swift; sourceTree = "<group>"; };
+		DF06BCF024BF57D700192816 /* ServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceVC.swift; sourceTree = "<group>"; };
+		DF06BCF224BF5B0D00192816 /* CharacteristicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicVC.swift; sourceTree = "<group>"; };
+		DF76C562243449E600EAF24E /* AccessoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 				DF06002723C5CC3E005F4371 /* AppDelegate.swift */,
 				DF06002923C5CC3E005F4371 /* SceneDelegate.swift */,
 				DF06002B23C5CC3E005F4371 /* ViewController.swift */,
-				DF76C562243449E600EAF24E /* AccessoryViewController.swift */,
+				DF76C562243449E600EAF24E /* AccessoryVC.swift */,
+				DF06BCF024BF57D700192816 /* ServiceVC.swift */,
+				DF06BCF224BF5B0D00192816 /* CharacteristicVC.swift */,
 				DF06002D23C5CC3E005F4371 /* Main.storyboard */,
 				DF06003023C5CC3F005F4371 /* Assets.xcassets */,
 				DF06003223C5CC3F005F4371 /* LaunchScreen.storyboard */,
@@ -158,7 +164,9 @@
 				DF06002C23C5CC3E005F4371 /* ViewController.swift in Sources */,
 				DF06002823C5CC3E005F4371 /* AppDelegate.swift in Sources */,
 				DF06002A23C5CC3E005F4371 /* SceneDelegate.swift in Sources */,
-				DF76C563243449E600EAF24E /* AccessoryViewController.swift in Sources */,
+				DF06BCF124BF57D700192816 /* ServiceVC.swift in Sources */,
+				DF76C563243449E600EAF24E /* AccessoryVC.swift in Sources */,
+				DF06BCF324BF5B0D00192816 /* CharacteristicVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

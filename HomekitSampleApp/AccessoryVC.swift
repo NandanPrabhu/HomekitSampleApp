@@ -11,9 +11,11 @@ import HomeKit
 
 class AccessoryViewController: UITableViewController {
     var selectedHome: HMHome?
+    var accessory: HMAccessory?
     var accessoryBrowser = HMAccessoryBrowser()
     var discoveredAccessories: [HMAccessory] = []
     var addedAccessories: [HMAccessory] = []
+    var services: [HMService] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +70,8 @@ class AccessoryViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
+            accessory = addedAccessories[indexPath.row]
+            self.performSegue(withIdentifier: "service", sender: nil)
         } else {
             discoveredAccessories[indexPath.row].identify { error in
                 if error == nil {
@@ -79,6 +83,12 @@ class AccessoryViewController: UITableViewController {
                     })
                 }
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ServiceVC {
+            vc.accessory = accessory
         }
     }
 }
